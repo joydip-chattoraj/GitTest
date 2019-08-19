@@ -1,0 +1,281 @@
+Thomson Reuters
+
+* programm for sorting a int array
+* constructors 2 constructors one with one parameter and the other with 2 parameters,
+how to pass first paramter value to first constructor
+*how to call similar methods of two differnt interfaces in a derived class
+* how to hide a method
+* we have changed the controller names but still business has to use same url of a MVC with old controller and action names
+  how do we change it in routing
+*on a button click change the color of other buttons with class c1.
+* how to call class file methods using Jquery - Ajax
+* which is better in using function or procedure
+* self joins
+* get second highest record in a table
+* what are delgates, what is th use of delegates and why we declare at namespace
+
+HIDA Infotech
+
+* differnt types of generations in garbage collection
+* which is better js or jq
+* what are changes in different versions of c#
+* differnce between joins and unions
+
+Infosys
+* tell me about your project and design it
+*write a programm to find discounts based on the category of the customer, make
+ sure any addition of new customer type comes there should not be any change in the
+ code
+*action filters in mvc
+*how do we get roles of the customer to do authorization
+*design two tables teacher and department
+*Sprint  in agile 
+
+
+capgemini
+
+* how user control events and controls are called to web application
+* How can we use another project methods to another project in a same solution
+* how any values a function can return
+* what kind of errors come accross while fetching data from db to we
+system execptions
+Arthimetic exception -dividebyzero,overflowexception
+Indexoutofrangeexecption
+Invalidcastexecption
+Nullrefernceexeception
+* what events are raised in order - page load, master page, control events
+* flow of MVC structure
+
+Thomsan reuters
+*New keyword
+*programm to write last 6 letters of a string
+*write a query to insert a row with which should have the empid next of the last empid 
+
+Honeywell
+Flow of execution of filters
+how action filters execute
+Dynamic way of add, delete, edit data - using web api
+
+Morgan stanley
+Nullable types  
+Mananaged code , unmanaged code
+how do objects can be compared
+try catch block questions
+what will happen if we handle the exception insteading of throwing an exception - loose the trace 
+
+Datamatics
+How to find the time taken by a action method to excute - by implementing action filters
+https://helpfordeveloper.blogspot.in/2017/05/calculate-time-taken-by-action-method-in-aspnet-mvc.html
+Try catch bock questions
+http://www.c-sharpcorner.com/UploadFile/84c85b/exception-handling-with-C-Sharp/
+
+
+Accenture
+
+How to pass partial view to a div tag in a button click through ajax
+how to post entire form to a controller
+https://www.danylkoweb.com/Blog/3-ways-to-receive-data-from-postbacks-in-aspnet-mvc-C2
+https://stackoverflow.com/questions/14124324/submitting-form-and-pass-data-to-controller-method-of-type-filestreamresult
+using (@Html.BeginForm("myMethod", "Home", FormMethod.Post))
+{   
+    //...    
+    @Html.HiddenFor(m => m.JobId)
+}
+[HttpPost]
+public FileStreamResult myMethod(Model model)
+{
+    sting str = model.JobId;
+}
+
+How to pass data from one action to another another action without tempdata
+QueryString
+
+can we pass tempdata from one action to another action to another action. - yes
+https://stackoverflow.com/questions/23677456/how-to-pass-value-from-one-action-to-another-action-having-same-controller
+we can passdata from controller to another using tempdata, querystring, through routes
+
+can we pass complex objects to tempdata - yes
+
+Storing data for retrieval on the next request in tempdata
+https://www.youtube.com/watch?v=EbDTRVcw5Hg
+
+
+
+Wellsfargo
+
+Explain oops concepts
+what are static and dynamic binding
+what is lazy binding
+difference between abstract and sealed class
+can abstract class can be sealed
+How garbage collection happens
+how to do Authentication 
+Difference between web forms and mvc controllers (which one you would implement)
+difference between WCF and web api
+What are REST principles
+Why WEBAPI is preferred
+What is routing is it needed, how to implement
+waht are action filters
+sequence of action filters execution
+How to implement customised action filters
+What are bundling, how to implement
+how to implement ajax in query on button click 
+on mouse voer how to change the color of a button
+What is Addclass propert in Jquery
+How to assign Divya to $ sign (var jq = $.noConflict())
+waht is sql profiler
+How to do tracing in SQL
+What is the difference between SP and joins
+how to get max 3rd sal from a table without using TOP Function use CTE 
+Ans:
+Use ROW_NUMBER(if you want a single) or DENSE_RANK(for all related rows):
+
+WITH CTE AS
+(
+    SELECT EmpID, EmpName, EmpSalary,
+           RN = ROW_NUMBER() OVER (ORDER BY EmpSalary DESC)
+    FROM dbo.Salary
+)
+SELECT EmpID, EmpName, EmpSalary
+FROM CTE
+WHERE RN = 3
+Difference between execute scalar, executenon query
+Difference between provider and adapter in ADO.net
+Write a programm for Palindrome sequence
+
+TCS
+
+tell me agile flow in your company
+Which tool do you use to store user stories
+what principles do you use to write user stories
+difference b/w interface and abstract
+difference b/w windows and web based applications
+The first and the foremost difference between Windows and Web Application, Windows application gets installed on a Windows based operating system whereas the web application is installed on a web server.
+Windows application can only be accessed from a system in which it is installed. A web application can be accessed from any system through internet.
+You need an Internet Information Services (IIS) server to run the web application. Windows application can directly be executed on a windows operating system.
+Windows applications can only be run on a windows platform. Web Application can run on a variety of platform including Windows, Mac, Linux, Solaris, Android, etc.
+If designed for a 64-bit operating system, a Windows application won’t work on the 16-bit system. Web application is independent of the type of system.
+
+what is ISNULL
+what are REST principles
+what is DensseRank in sql
+write a query to delete a table in a function
+write a query to delete duplicate rows
+
+what is put httpverb
+
+Rsam technologies
+
+* tell me oops concept (abstraction, encapsulation,inheritance, polymorphism)
+* write sample code for inheritance
+* swap two numbers without using a third variable
+  static void Main(string[] args)
+     {
+           int first,second ;
+           first = 1;
+           second = 2;
+           first = first + second;
+           second = first - second;
+           first = first - second;
+           Console.WriteLine(first.ToString());
+            Console.WriteLine(second.ToString());
+            Console.ReadLine();
+        }
+* Passing Reference/out type and value type
+   protected void Page_Load(object sender, EventArgs e)
+        {
+            int a1 = 20;
+                int b1 = 30;
+            //getdata(ref a1, b1);
+            int c1= getdata(  a1, b1);
+            Response.Write("Print a" + a1 + "Print b" + b1);
+
+        }
+        public int getdata(int a, int b)
+        {
+            //public int getdata(ref int a, int b)
+            //{
+            a = 21;
+            b = 31;
+          return a + b;
+            
+        }  
+
+Difference between Ref and Out 
+
+* Difference between Sp and function
+* Can a static method be in abstract class
+Yes, Static Method can be called from abstract method. Object of abstract class can't 
+be created but to call static object is not required. 
+So Static method can be called from abstract class.
+* do all methods in a abstract class should be implemented
+abstract methods should be implemented but not non abstract methods
+* what is statemanagement
+* when to use session state and view state
+* how to call code behid methods using Jquery
+
+* how to select class names from a div tagame through Jqury 
+<div id="mydiv"><div class="myclass"></div></div>
+$('.myclass','#mydiv');
+* how to select last record of a dropdown and make it as selected one
+DropDownList1.Items.Add("Divya");
+                DropDownList1.Items.Add("Deepu");
+                DropDownList1.Items.Add("Deepthi");
+                DropDownList1.Items.Add("Lucky");
+                int lastindex = DropDownList1.Items.Count - 1;
+                DropDownList1.SelectedIndex = lastindex;
+* Difference between String and string
+* What is using
+* how to find total Marks of a student from a table
+select FirstName,LastName , (Salary+ sal1)as totalsal from dbo.Employee
+* how to call Jquery functions from code behind
+JS:
+<script>
+   function Confirm()
+   {
+      $(".saved").fadeIn(500).fadeOut(500);
+   }
+</script>
+c#
+protected void btn_click(object sender, Eventargs e)
+{
+    ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "script", "Confirm();", true);
+}
+
+Dell
+
+What and Why interface
+what is injection dependency
+how to check whether a string is there in a -z alphabets
+how injection dependency work
+What is Angular any knowledge on it
+what features of c#4.0 do you use in your application
+What is the advantage of Jquery over Js
+Where do you maintain existing users of your application and how do you check if they are 
+new users or existing users
+how do you check cookies are enabled on your browsers
+
+Health Assyst
+
+What are solid principles
+What are design patterns, what is the pattern used in your project
+What is the use of interface apart from multiple inheritance
+i have two temp tables i have to delete duplicate rows from them
+how to pass a table to SP and what is the datatype for that in sp
+how to delete duplicte rows
+when to use interface and when to use abstract
+what is dependency injection
+what is dense rank, rank, row number
+whats the advantage of MVC over web normal applications
+what is dynamic .. viewbag is dynamic does it need a type cast.. 
+ref type and value type difference
+What are rest principles
+can two columns be set as primary key
+What are different constraints in sql
+how do you maintain sessions in your project
+what are constraints in a sql
+-------------------------------------------------------JOY
+What are exception filters
+how many servers does your application use and how it works
+what are httphandlers and http modules
+what are extension methods
